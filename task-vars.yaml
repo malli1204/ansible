@@ -1,0 +1,13 @@
+- name: play level vars
+  hosts: local
+  connection: local
+  vars:
+    course: Devops
+    duration: 10 hrs
+    mentor: malli
+  tasks:
+  - name: course info
+    vars:
+      course: ansible
+    ansible.builtin.debug:
+      msg: "hi this is new {{ course }} team duration is {{ duration }} and the mentor is {{ mentor }}"
