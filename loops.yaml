@@ -1,0 +1,11 @@
+- name: loops
+  hosts: frontend
+  tasks:
+  - name: looping 
+    ansible.builtin.debug:
+      msg: "hello {{ item }}"
+    loop:
+    - malli
+    - harsha
+    - vishnu
+    - nikitha
