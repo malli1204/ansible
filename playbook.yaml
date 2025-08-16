@@ -1,6 +1,6 @@
 -name: ping server
-  host: frontend
-  tasks:
-  -name: ping the server,
-    ansible.builtin.debug:
-    msg: "pinged the server"
+ host: frontend
+ tasks:
+ -name: ping the server,
+   ansible.builtin.debug:
+   msg: "pinged the server"
