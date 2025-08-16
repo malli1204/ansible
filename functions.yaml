@@ -4,4 +4,4 @@
   tasks:
   - name:
     ansible.builtin.debug:
-      msg: "{{ user }}"
+      msg: "{{ user | default ('malli')}}"
