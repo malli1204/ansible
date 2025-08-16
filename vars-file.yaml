@@ -6,4 +6,4 @@
   tasks:
   - name: var files exec
     ansible.builtin.debug:
-    msg: "hi welcome to {{ course }} i am {{ mentor }} whole duration is {{ duration}}"
+      msg: "hi welcome to {{ course }} i am {{ mentor }} whole duration is {{ duration}}"
