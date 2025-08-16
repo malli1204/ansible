@@ -1,0 +1,18 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course: devops
+    duration: 120 
+    islive: true
+    tools:
+    - linux
+    - shell
+    - ansible
+    concepts:
+      ci: jenkins
+      scripting: "shell, ansible, terraform"
+  tasks:
+  - name: data types exec
+    ansible.builtin.debug:
+      msg: "hi new {{ course }} duration is {{ duration }}HRS and tools are {{ tools }} and main concepts are {{ concepts }}"
