@@ -1,7 +1,13 @@
 - name: functions
   hosts: frontend
   become: yes
+  vars:
+    persons: "malli,harsha,ramesh,karthik"
   tasks:
   - name:
     ansible.builtin.debug:
       msg: "{{ user | default ('malli')}}"
+
+  - name:
+    ansible.builtin.debug:
+      msg: "{{ persons }}"
