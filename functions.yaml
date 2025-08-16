@@ -10,4 +10,4 @@
 
   - name:
     ansible.builtin.debug:
-      msg: "{{ persons | spilt (',')}}"
+      msg: "{{ persons | split (',') }}"
