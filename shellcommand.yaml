@@ -5,3 +5,8 @@
   - name: shell-command usage
     # ansible.builtin.command: "ls -ltr > /tmp/output.txt"
     ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+    register: command_result
+
+  - name: getting the result
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
