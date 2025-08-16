@@ -1,0 +1,14 @@
+- name: installing redhat and debian
+  hosts: frontend
+  tasks:
+  - name: installing nginx if red hat
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+    when ansible_os_family == "RedHat"
+
+  - name: installing nginx if debian
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+    when ansible_os_family == "Debian"  
