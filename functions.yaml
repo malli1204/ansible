@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   vars:
-    persons: "malli,harsha,ramesh,karthik"
+    persons: "malli, harsha, ramesh, karthik"
   tasks:
   - name:
     ansible.builtin.debug:
