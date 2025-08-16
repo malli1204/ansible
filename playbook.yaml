@@ -1,6 +1,5 @@
-- name: ping server
-  host: frontend
+- name: Update web servers
+  hosts: frontend
   tasks:
-  - name: ping the server
-    ansible.builtin.debug:
-    msg: "pinged the server"
+  - name: Example from an Ansible Playbook
+    ansible.builtin.ping:
