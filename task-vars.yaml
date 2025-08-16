@@ -12,7 +12,7 @@
     ansible.builtin.debug:
       msg: "hi this is new {{ course }} team duration is {{ duration }} and the mentor is {{ mentor }}"
   
-    tasks:
-    - name: course info
-      ansible.builtin.debug:
-        msg: "hi this is new {{ course }} team duration is {{ duration }} and the mentor is {{ mentor }}"
+  tasks:
+  - name: course info
+    ansible.builtin.debug:
+      msg: "hi this is new {{ course }} team duration is {{ duration }} and the mentor is {{ mentor }}"
