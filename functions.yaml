@@ -3,9 +3,20 @@
   become: yes
   vars:
     persons:
-      person1: "malli"
-      person2: "karthik"
-      person3: "vishnu"
+      [
+        {
+            "key": "person1",
+            "value": "malli"
+        },
+        {
+            "key": "person2",
+            "value": "karthik"
+        },
+        {
+            "key": "person3",
+            "value": "vishnu"
+        }
+    ]
   tasks:
   - name:
     ansible.builtin.debug:
@@ -13,4 +24,4 @@
 
   - name:
     ansible.builtin.debug:
-      msg: "{{ persons | dict2items }}"
+      msg: "{{ persons | items2dict }}"
