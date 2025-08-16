@@ -1,13 +1,13 @@
 - name: prompt vars
   hosts: local
   connection: local
-  vars_prompt:
-  - name: username
-    prompt: please enter your username
-    private: false
-  - name: password
-    prompt: please enter your password
-    private: false
+  # vars_prompt:
+  # - name: username
+  #   prompt: please enter your username
+  #   private: false
+  # - name: password
+  #   prompt: please enter your password
+  #   private: false
   
   tasks:
   - name: checking
