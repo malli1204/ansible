@@ -13,4 +13,4 @@
 
   - name:
     ansible.builtin.debug:
-      msg: "{{ persons }}"
+      msg: "{{ persons | dict2item }}"
