@@ -3,4 +3,5 @@
   become: yes
   tasks:
   - name: shell-command usage
-    ansible.builtin.command: "ls -ltr > /tmp/output.txt"
+    # ansible.builtin.command: "ls -ltr > /tmp/output.txt"
+    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
