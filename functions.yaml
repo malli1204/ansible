@@ -2,7 +2,10 @@
   hosts: frontend
   become: yes
   vars:
-    persons: "malli, harsha, ramesh, karthik"
+    persons:
+      person1: "malli"
+      person2: "karthik"
+      person3: "vishnu"
   tasks:
   - name:
     ansible.builtin.debug:
@@ -10,4 +13,4 @@
 
   - name:
     ansible.builtin.debug:
-      msg: "{{ persons | split(',') }}"
+      msg: "{{ persons }}"
