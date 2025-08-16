@@ -1,6 +1,5 @@
 - name: ping server
-  host: local
-  connection: local
+  host: frontend
   tasks:
   - name: ping the server,
     ansible.builtin.debug:
