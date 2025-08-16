@@ -1,5 +1,6 @@
 - name: installing redhat and debian
   hosts: frontend
+  becomme: yes
   tasks:
   - name: installing nginx if red hat
     ansible.builtin.dnf:
