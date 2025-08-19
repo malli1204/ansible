@@ -10,7 +10,7 @@
   
   - name: if error comes
     ansible.builtin.command: useradd roboshop
-  when: output.rc != 0 
+    when: output.rc != 0 
 
   - name: if error not comes
     ansible.builtin.debug:
