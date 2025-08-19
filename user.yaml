@@ -5,8 +5,8 @@
   tasks:
   - name: checking for roboshop user
     ansible.builtin.command: id roboshop
-      register: output
-      ignore_error: true
+    register: output
+    ignore_errors: true
   
   - name: if error comes
     ansible.builtin.command: useradd roboshop
