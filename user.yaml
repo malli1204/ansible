@@ -15,3 +15,4 @@
   - name: if error not comes
     ansible.builtin.debug:
       msg: "no error occurs"
+    when : output.rc == 0
